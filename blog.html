@@ -12,9 +12,80 @@
 </head>
 
 <body>
-    <h1>Welcome to Blog Page</h1>
+    <header class="container text-center mt-5 mb-3">
+        <h1>Welcome to Blog Page</h1>
+    </header>
+
+    <main class="container">
+        <div class="card my-4">
+            <div class="card-header">
+                What is the difference between local storage and session storage?
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Local and session storage are JavaScript APIs that you can use to store data on the client-side. They allow a website to store data on the browser and instruct the browser to access it later on. The difference between sessionStorage and localStorage is that localStorage data does not expire,
+                        whereas sessionStorage data is cleared when the page session ends. A unique page session gets
+                        created once a document is loaded in a browser tab. Page sessions are valid for only one tab at
+                        a time. Also local storage capacity is higher than session storage capacity.</p>
+
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="card my-4">
+            <div class="card-header">
+                What is difference between global scope and block scope in javascript?
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Variables declared outside of any function become global variables. Global variables can be
+                        accessed and modified from any function. On the other hand, a block scoped variable means that
+                        the variable defined within a block will not be accessible from outside the block. A block can
+                        reside inside a function, and a block scoped variable will not be available outside the block
+                        even if the block is inside a function.</p>
+                </blockquote>
+            </div>
+        </div>
 
 
+        <div class="card my-4">
+            <div class="card-header">
+                How JavaScript event loop work?
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>The event loop is a mechanism that allows JavaScript to perform non-blocking operations. When an
+                        asynchronous task is started, the event loop will start running. Once the task is completed, the
+                        event loop will again check for any other tasks that need to be performed.</p>
+
+                </blockquote>
+            </div>
+        </div>
+
+
+        <div class="card my-4">
+            <div class="card-header">
+                How can we get Undefined in JavaScript?
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>
+                    <ul>
+                        <li>Variable that is not initialized will give undefined.</li>
+                        <li>Function with no return give undefined.</li>
+                        <li>Parameter that is not passed will be undefined.</li>
+                        <li>If return has nothing on the right side will return undefined.</li>
+                        <li>Property that doesn't exists on an object will give undefined.</li>
+                        <li>Accessing array elements outside of the index range</li>
+                        <li>Deleting an element inside an array will give undefined.</li>
+                        <li>Set a value directly to undefined.</li>
+                    </ul>
+                    </p>
+
+                </blockquote>
+            </div>
+        </div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
